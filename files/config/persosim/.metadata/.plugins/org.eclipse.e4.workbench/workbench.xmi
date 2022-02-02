@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_vgMscIRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.application" contributorURI="platform:/plugin/de.persosim.rcp" selectedElement="_vgMscYRNEeyQIt7F6oizqQ" bindingContexts="_vgMsf4RNEeyQIt7F6oizqQ">
+  <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
+  <tags>ModelMigrationProcessor.001</tags>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_vgMscYRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.mainWindow" contributorURI="platform:/plugin/de.persosim.rcp" selectedElement="_vgMscoRNEeyQIt7F6oizqQ" label="PersoSim GUI" iconURI="platform:/plugin/de.persosim.rcp/icons/persosim.png" x="1177" y="233" width="522" height="578">
+    <tags>topLevel</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_vgMscoRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.perspectiveStack" contributorURI="platform:/plugin/de.persosim.rcp" selectedElement="_vgMsc4RNEeyQIt7F6oizqQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_vgMsc4RNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.perspective" contributorURI="platform:/plugin/de.persosim.rcp" selectedElement="_vgMsdIRNEeyQIt7F6oizqQ">
+        <children xsi:type="basic:PartStack" xmi:id="_vgMsdIRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.partstack.main" contributorURI="platform:/plugin/de.persosim.rcp" selectedElement="_l56EoEIsEeS095NvfbDi9w">
+          <tags>active</tags>
+          <tags>noFocus</tags>
+          <children xsi:type="basic:Part" xmi:id="_l56EoEIsEeS095NvfbDi9w" elementId="de.persosim.driver.connector.ui.parts.reader" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" contributionURI="bundleclass://de.persosim.driver.connector.ui/de.persosim.driver.connector.ui.parts.ReaderPart" label="Card Reader">
+            <tags>active</tags>
+          </children>
+          <children xsi:type="basic:Part" xmi:id="_l56EoEIsEeS095NvfbDi9w" elementId="de.persosim.simulator.ui.parts.mainPart" contributorURI="platform:/plugin/de.persosim.simulator.ui" contributionURI="bundleclass://de.persosim.simulator.ui/de.persosim.simulator.ui.parts.PersoSimPart" label="Logging"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_vgMsdYRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.mainMenue" contributorURI="platform:/plugin/de.persosim.rcp">
+      <children xsi:type="menu:Menu" xmi:id="_vgMsdoRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.mainMenue.file" contributorURI="platform:/plugin/de.persosim.rcp" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_vgMsd4RNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.mainMenue.file.quit" contributorURI="platform:/plugin/de.persosim.rcp" label="Quit" command="_vgMsgoRNEeyQIt7F6oizqQ"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_JDxsQEZdEeSQKqd06nTv0g" elementId="de.persosim.simulator.ui.menu.selectPersoMenu" contributorURI="platform:/plugin/de.persosim.simulator.ui" label="Personalization">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_QKpL0FUEEeSxD7VZ_Y6-PA" elementId="de.persosim.simulator.ui.handledmenuitem.selectPersoFromFile" contributorURI="platform:/plugin/de.persosim.simulator.ui" label="Select Perso from File" command="_7jTUYFUDEeSxD7VZ_Y6-PA"/>
+        <children xsi:type="menu:DynamicMenuContribution" xmi:id="_4pZ40FU0EeS9UYXjeRNGFg" elementId="de.persosim.simulator.ui.menu.dynamicallySelectFromTemplate" contributorURI="platform:/plugin/de.persosim.simulator.ui" label="Dyn Sel From Template" contributionURI="bundleclass://de.persosim.simulator.ui/de.persosim.simulator.ui.menuitems.DynamicPersoTemplateMenuItem"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_gNuwoB1fEeiVtbTXi_49Ng" elementId="de.persosim.simulator.ui.handledmenuitem.removeCard" contributorURI="platform:/plugin/de.persosim.simulator.ui" label="Remove Card" command="_Kls4QB1fEeiVtbTXi_49Ng"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_2_oyQEfZEeSy-836va2YTA" elementId="de.persosim.driver.connector.ui.menu.readerType" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" label="Reader Type">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_FBcsMOZOEee50pt6teHFRg" elementId="de.persosim.driver.connector.ui.handledmenuitem.virtualDriver" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" label="Use virtual driver" command="_3McVIOZWEee50pt6teHFRg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_CJkgIOZOEee50pt6teHFRg" elementId="de.persosim.remoteifd.ui.remoteIFD" contributorURI="platform:/plugin/de.persosim.remoteifd.ui" label="Use Remote IFD" command="_af6NUOZYEee50pt6teHFRg"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_dxp2cOZOEee50pt6teHFRg" elementId="de.persosim.driver.connector.ui.menuseparator.readerType" contributorURI="platform:/plugin/de.persosim.driver.connector.ui"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4JpHQEfZEeSy-836va2YTA" elementId="de.persosim.driver.connector.ui.handledmenuitem.basic" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" label="Basic reader" command="_g10FYD_LEeS0lKPtDtc_Vw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_6zsSsEfZEeSy-836va2YTA" elementId="de.persosim.driver.connector.ui.handledmenuitem.changeToStandardReader" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" label="Standard reader" command="_cO4TEEe5EeS8Sb-zNDOJXw"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_IcPN4OaXEeeaJIdYo5u99g" elementId="de.persosim.driver.connector.ui.menuseparator.configure" contributorURI="platform:/plugin/de.persosim.driver.connector.ui"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_aUm9oOaXEeeaJIdYo5u99g" elementId="de.persosim.remoteifd.ui.handledmenuitem.ConfigureRemoteIfd" contributorURI="platform:/plugin/de.persosim.remoteifd.ui" label="Configure RemoteIFD" command="_fNn5oOZYEee50pt6teHFRg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_vgMseIRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.mainMenue.help" contributorURI="platform:/plugin/de.persosim.rcp" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_vgMseYRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.mainMenue.help.about" contributorURI="platform:/plugin/de.persosim.rcp" label="About" command="_vgMsg4RNEeyQIt7F6oizqQ"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_vgMseoRNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.handlers.quitCommandHandler" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://de.persosim.rcp/de.persosim.rcp.handlers.QuitHandler" command="_vgMsgoRNEeyQIt7F6oizqQ"/>
+  <handlers xmi:id="_vgMse4RNEeyQIt7F6oizqQ" elementId="de.persosim.rcp.handlers.aboutCommandHandler" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://de.persosim.rcp/de.persosim.rcp.handlers.AboutHandler" command="_vgMsg4RNEeyQIt7F6oizqQ"/>
+  <handlers xmi:id="_X31aUEe5EeS8Sb-zNDOJXw" elementId="de.persosim.driver.connector.ui.handler.standard" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" contributionURI="bundleclass://de.persosim.driver.connector.ui/de.persosim.driver.connector.ui.handlers.StandardReaderHandler" command="_cO4TEEe5EeS8Sb-zNDOJXw"/>
+  <handlers xmi:id="_xdGWwEfZEeSy-836va2YTA" elementId="de.persosim.driver.connector.ui.handler.basic" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" contributionURI="bundleclass://de.persosim.driver.connector.ui/de.persosim.driver.connector.ui.handlers.BasicReaderHandler" command="_g10FYD_LEeS0lKPtDtc_Vw"/>
+  <handlers xmi:id="__jzosOZWEee50pt6teHFRg" elementId="de.persosim.driver.connector.ui.handler.virtualDriver" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" contributionURI="bundleclass://de.persosim.driver.connector.ui/de.persosim.driver.connector.ui.handlers.VirtualDriverHandler" command="_3McVIOZWEee50pt6teHFRg"/>
+  <handlers xmi:id="__6nykEZgEeSQKqd06nTv0g" elementId="de.persosim.simulator.ui.handler.selectPersoFromTemplateHandler" contributorURI="platform:/plugin/de.persosim.simulator.ui" contributionURI="bundleclass://de.persosim.simulator.ui/de.persosim.simulator.ui.handlers.SelectPersoFromTemplateHandler" command="_10f3IEZgEeSQKqd06nTv0g"/>
+  <handlers xmi:id="_F3jycFUEEeSxD7VZ_Y6-PA" elementId="de.persosim.simulator.ui.handler.selectPersoFromFileHandler" contributorURI="platform:/plugin/de.persosim.simulator.ui" contributionURI="bundleclass://de.persosim.simulator.ui/de.persosim.simulator.ui.handlers.SelectPersoFromFileHandler" command="_7jTUYFUDEeSxD7VZ_Y6-PA"/>
+  <handlers xmi:id="_F7LC0B1fEeiVtbTXi_49Ng" elementId="de.persosim.simulator.ui.handler.removeCard" contributorURI="platform:/plugin/de.persosim.simulator.ui" contributionURI="bundleclass://de.persosim.simulator.ui/de.persosim.simulator.ui.handlers.RemoveCardHandler" command="_Kls4QB1fEeiVtbTXi_49Ng"/>
+  <handlers xmi:id="_jWP74OZYEee50pt6teHFRg" elementId="de.persosim.remoteifd.ui.handler.useRemoteIfd" contributorURI="platform:/plugin/de.persosim.remoteifd.ui" contributionURI="bundleclass://de.persosim.remoteifd.ui/de.persosim.remoteifd.ui.handlers.RemoteIfdHandler" command="_af6NUOZYEee50pt6teHFRg"/>
+  <handlers xmi:id="_OzqMIOZZEee50pt6teHFRg" elementId="de.persosim.remoteifd.ui.handler.configureRemoteIfd" contributorURI="platform:/plugin/de.persosim.remoteifd.ui" contributionURI="bundleclass://de.persosim.remoteifd.ui/de.persosim.remoteifd.ui.handlers.ConfigureRemoteIfdHandler" command="_fNn5oOZYEee50pt6teHFRg"/>
+  <bindingTables xmi:id="_vgMsfIRNEeyQIt7F6oizqQ" contributorURI="platform:/plugin/de.persosim.rcp" bindingContext="_vgMsf4RNEeyQIt7F6oizqQ">
+    <bindings xmi:id="_viHYAIRNEeyQIt7F6oizqQ" keySequence="CTRL+INSERT" command="_vhnoxYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImJ4RNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+SPACE" command="_vhnoyIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJNMYRNEeyQIt7F6oizqQ" keySequence="CTRL+A" command="_vhoP5oRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJNMoRNEeyQIt7F6oizqQ" keySequence="CTRL+C" command="_vhnoxYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJNNYRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+Z" command="_vhno0oRNEeyQIt7F6oizqQ">
+      <tags>platform:gtk</tags>
+    </bindings>
+    <bindings xmi:id="_viLCYIRNEeyQIt7F6oizqQ" keySequence="SHIFT+INSERT" command="_vhmaoYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLCZYRNEeyQIt7F6oizqQ" keySequence="CTRL+SPACE" command="_vhoP1oRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpcoRNEeyQIt7F6oizqQ" keySequence="CTRL+X" command="_vhmaoIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpc4RNEeyQIt7F6oizqQ" keySequence="CTRL+Z" command="_vhlzlIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpdYRNEeyQIt7F6oizqQ" keySequence="SHIFT+DEL" command="_vhmaoIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQhIRNEeyQIt7F6oizqQ" keySequence="CTRL+F10" command="_vhoP54RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viM3kIRNEeyQIt7F6oizqQ" keySequence="ALT+PAGE_UP" command="_vhoP24RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viM3kYRNEeyQIt7F6oizqQ" keySequence="CTRL+V" command="_vhmaoYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viM3koRNEeyQIt7F6oizqQ" keySequence="ALT+PAGE_DOWN" command="_vho26oRNEeyQIt7F6oizqQ"/>
+  </bindingTables>
+  <bindingTables xmi:id="_viH_EIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.contexts.window" bindingContext="_vgMsgIRNEeyQIt7F6oizqQ">
+    <bindings xmi:id="_viH_EYRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_vhmapIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImIIRNEeyQIt7F6oizqQ" keySequence="F2" command="_vhnowYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImIYRNEeyQIt7F6oizqQ" keySequence="CTRL+F4" command="_vhoP0YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImIoRNEeyQIt7F6oizqQ" keySequence="CTRL+M" command="_vhno2IRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImI4RNEeyQIt7F6oizqQ" keySequence="CTRL+N" command="_vhno2YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImJIRNEeyQIt7F6oizqQ" keySequence="F5" command="_vhoP7YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImJYRNEeyQIt7F6oizqQ" keySequence="CTRL+F6" command="_vhnozYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viImJoRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+NUMPAD_DIVIDE" command="_vhno1oRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJNMIRNEeyQIt7F6oizqQ" keySequence="ALT+F7" command="_vhmaooRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJNM4RNEeyQIt7F6oizqQ" keySequence="CTRL+E" command="_vho25YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJNNIRNEeyQIt7F6oizqQ" keySequence="CTRL+F" command="_vhnoxIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viJ0QIRNEeyQIt7F6oizqQ" keySequence="CTRL+{" command="_vhno0IRNEeyQIt7F6oizqQ">
+      <parameters xmi:id="_viJ0QYRNEeyQIt7F6oizqQ" elementId="Splitter.isHorizontal" name="Splitter.isHorizontal" value="false"/>
+    </bindings>
+    <bindings xmi:id="_viKbUIRNEeyQIt7F6oizqQ" keySequence="ALT+-" command="_vhoP2YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viKbUYRNEeyQIt7F6oizqQ" keySequence="DEL" command="_vhno1YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viKbUoRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+F7" command="_vhoP2oRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viKbU4RNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+F8" command="_vhnoz4RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viKbVIRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+S" command="_vhmapYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viKbVYRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+W" command="_vhlzmYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLCYYRNEeyQIt7F6oizqQ" keySequence="CTRL+," command="_vhnBtYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLCYoRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+F4" command="_vhlzmYRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLCY4RNEeyQIt7F6oizqQ" keySequence="CTRL+." command="_vhmap4RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLCZIRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+F6" command="_vhnowoRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpcIRNEeyQIt7F6oizqQ" keySequence="ALT+SHIFT+F7" command="_vhmao4RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpcYRNEeyQIt7F6oizqQ" keySequence="CTRL+SHIFT+E" command="_vho26IRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpdIRNEeyQIt7F6oizqQ" keySequence="ALT+CR" command="_vhnBsoRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viLpdoRNEeyQIt7F6oizqQ" keySequence="CTRL+_" command="_vhno0IRNEeyQIt7F6oizqQ">
+      <parameters xmi:id="_viLpd4RNEeyQIt7F6oizqQ" elementId="Splitter.isHorizontal" name="Splitter.isHorizontal" value="true"/>
+    </bindings>
+    <bindings xmi:id="_viLpeIRNEeyQIt7F6oizqQ" keySequence="CTRL+P" command="_vhno1IRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQgIRNEeyQIt7F6oizqQ" keySequence="CTRL+F7" command="_vhnoxoRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQgYRNEeyQIt7F6oizqQ" keySequence="CTRL+F8" command="_vho244RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQgoRNEeyQIt7F6oizqQ" keySequence="CTRL+S" command="_vhnBtIRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQg4RNEeyQIt7F6oizqQ" keySequence="ALT+ARROW_LEFT" command="_vhoP64RNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQhYRNEeyQIt7F6oizqQ" keySequence="ALT+ARROW_RIGHT" command="_vhno3YRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viMQhoRNEeyQIt7F6oizqQ" keySequence="F12" command="_vhoP2IRNEeyQIt7F6oizqQ"/>
+    <bindings xmi:id="_viM3k4RNEeyQIt7F6oizqQ" keySequence="CTRL+W" command="_vhoP0YRNEeyQIt7F6oizqQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_vgMsf4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/de.persosim.rcp" name="In Dialogs and Windows" description="Either a dialog or a window is open">
+    <children xmi:id="_vgMsgIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/de.persosim.rcp" name="In Windows" description="A window is open">
+      <children xmi:id="_vhrTIYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.textEditorScope" name="Editing Text" description="Editing Text Context"/>
+    </children>
+    <children xmi:id="_vgMsgYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/de.persosim.rcp" name="In Dialogs" description="A dialog is open"/>
+  </rootContext>
+  <rootContext xmi:id="_vhrTIIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.contexts.workbenchMenu" name="Workbench Menu" description="When no Workbench windows are active"/>
+  <rootContext xmi:id="_vhrTIoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.contexts.actionSet" name="Action Set" description="Parent context for action sets"/>
+  <commands xmi:id="_vgMsgoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.exit" contributorURI="platform:/plugin/de.persosim.rcp" commandName="Exit" description="Exit the application"/>
+  <commands xmi:id="_vgMsg4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.aboutAction" contributorURI="platform:/plugin/de.persosim.rcp" commandName="About" description="Open the about dialog"/>
+  <commands xmi:id="_vhlzkIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.pinEditor" commandName="Pin Editor" description="Pin the current editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzkYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.resetPerspective" commandName="Reset Perspective" description="Reset the current perspective to its default state" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzkoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.nextTab" commandName="Next Tab" description="Switch to the next tab" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzk4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.quickAccess" commandName="Quick Access" description="Quickly access UI elements" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzlIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.undo" commandName="Undo" description="Undo the last operation" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzlYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.togglestatusbar" commandName="Toggle Statusbar" description="Toggle the visibility of the bottom status bar" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzloRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.closePart" commandName="Close Part" description="Close the active workbench part" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzl4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.installationDialog" commandName="Installation Information" description="Open the installation dialog" category="_vhlMhoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzmIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.back" commandName="Back" description="Navigate back" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhlzmYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.closeAll" commandName="Close All" description="Close all editors" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmaoIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.cut" commandName="Cut" description="Cut the selection to the clipboard" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmaoYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.paste" commandName="Paste" description="Paste from the clipboard" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmaooRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.part.nextPage" commandName="Next Page" description="Switch to the next page" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmao4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.part.previousPage" commandName="Previous Page" description="Switch to the previous page" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmapIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.expandAll" commandName="Expand All" description="Expand the current tree" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmapYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.saveAll" commandName="Save All" description="Save all current contents" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmapoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.showKeyAssist" commandName="Show Key Assist" description="Show the key assist dialog" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhmap4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.next" commandName="Next" description="Navigate to the next item" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnBsIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.closePerspective" commandName="Close Perspective" description="Close the current perspective" category="_vhlMhIRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhnBsYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.closePerspective.perspectiveId" name="Perspective Id"/>
+  </commands>
+  <commands xmi:id="_vhnBsoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.properties" commandName="Properties" description="Display the properties of the selected item" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnBs4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.closeOthers" commandName="Close Others" description="Close all editors except the one that is active" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnBtIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.save" commandName="Save" description="Save the current contents" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnBtYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.previous" commandName="Previous" description="Navigate to the previous item" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnBtoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.preferences" commandName="Preferences" description="Open the preferences dialog" category="_vhlMhIRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhnowIRNEeyQIt7F6oizqQ" elementId="preferencePageId" name="Preference Page"/>
+  </commands>
+  <commands xmi:id="_vhnowYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.rename" commandName="Rename" description="Rename the selected item" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnowoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.previousEditor" commandName="Previous Editor" description="Switch to the previous editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnow4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.activeContextInfo" commandName="Show activeContext Info" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnoxIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.findReplace" commandName="Find and Replace" description="Find and replace text" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnoxYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.copy" commandName="Copy" description="Copy the selection to the clipboard" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnoxoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.nextView" commandName="Next View" description="Switch to the next view" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnox4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.tipsAndTricksAction" commandName="Tips and Tricks" description="Open the tips and tricks help page" category="_vhlMhoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnoyIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.text.contentAssist.contextInformation" commandName="Context Information" description="Show Context Information" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnoyYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.export" commandName="Export" description="Export" category="_vhlMg4RNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhnoyoRNEeyQIt7F6oizqQ" elementId="exportWizardId" name="Export Wizard"/>
+  </commands>
+  <commands xmi:id="_vhnoy4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.fullscreenmode" commandName="Toggle Full Screen" description="Toggles the window between full screen and normal" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnozIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.saveAs" commandName="Save As" description="Save the current contents to another location" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnozYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.nextEditor" commandName="Next Editor" description="Switch to the next editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnozoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.closeAllSaved" commandName="Close All Saved" description="Close all saved editors" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhnoz4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.previousPerspective" commandName="Previous Perspective" description="Switch to the previous perspective" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno0IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.splitEditor" commandName="Toggle Split Editor" description="Split or join the currently active editor." category="_vhlMhIRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhno0YRNEeyQIt7F6oizqQ" elementId="Splitter.isHorizontal" name="Orientation" optional="false"/>
+  </commands>
+  <commands xmi:id="_vhno0oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.redo" commandName="Redo" description="Redo the last operation" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno04RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.helpContents" commandName="Help Contents" description="Open the help contents" category="_vhlMhoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno1IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.print" commandName="Print" description="Print" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno1YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.delete" commandName="Delete" description="Delete the selection" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno1oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.collapseAll" commandName="Collapse All" description="Collapse the current tree" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno14RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.goInto" commandName="Go Into" description="Navigate into the selected item" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno2IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.maximizePart" commandName="Maximize Active View or Editor" description="Toggles maximize/restore state of active view or editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno2YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.newWizard" commandName="New" description="Open the New item wizard" category="_vhlMg4RNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhno2oRNEeyQIt7F6oizqQ" elementId="newWizardId" name="New Wizard"/>
+  </commands>
+  <commands xmi:id="_vhno24RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.newWindow" commandName="New Window" description="Open another window" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno3IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.lockToolBar" commandName="Toggle Lock Toolbars" description="Toggle the Lock on the Toolbars" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno3YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.forwardHistory" commandName="Forward History" description="Move forward in the editor navigation history" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno3oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.newEditor" commandName="Clone Editor" description="Open another editor on the active editor's input" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno34RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.spy" commandName="Show Contributing Plug-in" description="Shows contribution information for the currently selected element" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhno4IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.minimizePart" commandName="Minimize Active View or Editor" description="Minimizes the active view or editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP0IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.helpSearch" commandName="Help Search" description="Open the help search" category="_vhlMhoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP0YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.close" commandName="Close" description="Close the active editor" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP0oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.restartWorkbench" commandName="Restart" description="Restart the workbench" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP04RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.customizePerspective" commandName="Customize Perspective" description="Customize the current perspective" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP1IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.addBookmark" commandName="Add Bookmark" description="Add a bookmark" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP1YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.quickStartAction" commandName="Welcome" description="Show help for beginning users" category="_vhlMhoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP1oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.text.contentAssist.proposals" commandName="Content Assist" description="Content Assist" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP14RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.up" commandName="Up" description="Navigate up one level" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP2IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.activateEditor" commandName="Activate Editor" description="Activate the editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP2YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.showSystemMenu" commandName="Show System Menu" description="Show the system menu" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP2oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.previousView" commandName="Previous View" description="Switch to the previous view" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP24RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.previousSubTab" commandName="Previous Sub-Tab" description="Switch to the previous sub-tab" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP3IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.hideShowEditors" commandName="Toggle Shared Area Visibility" description="Toggles the visibility of the shared area" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP3YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.showIn" commandName="Show In" category="_vhlMgYRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhoP3oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.showIn.targetId" name="Show In Target Id" optional="false"/>
+  </commands>
+  <commands xmi:id="_vhoP34RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.displayHelp" commandName="Display Help" description="Display a Help topic" category="_vhlMhoRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhoP4IRNEeyQIt7F6oizqQ" elementId="href" name="Help topic href"/>
+  </commands>
+  <commands xmi:id="_vhoP4YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.revert" commandName="Revert" description="Revert to the last saved state" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP4oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.views.showView" commandName="Show View" description="Shows a particular view" category="_vhklcIRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhoP44RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.views.showView.viewId" name="View"/>
+    <parameters xmi:id="_vhoP5IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.views.showView.secondaryId" name="Secondary Id"/>
+    <parameters xmi:id="_vhoP5YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.views.showView.makeFast" name="As FastView"/>
+  </commands>
+  <commands xmi:id="_vhoP5oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_vhlMgoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP54RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.showViewMenu" commandName="Show View Menu" description="Show the view menu" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP6IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.savePerspective" commandName="Save Perspective As" description="Save the current perspective" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP6YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.showContextMenu" commandName="Show Context Menu" description="Show the context menu" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP6oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.edit.move" commandName="Move..." description="Move the selected item" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP64RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.backwardHistory" commandName="Backward History" description="Move backward in the editor navigation history" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP7IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.previousTab" commandName="Previous Tab" description="Switch to the previous tab" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP7YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.refresh" commandName="Refresh" description="Refresh the selected items" category="_vhlMg4RNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP7oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.forward" commandName="Forward" description="Navigate forward" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP74RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.hidetrimbars" commandName="Toggle visibility of the window toolbars" description="Toggle the visibility of the toolbars of the current window" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vhoP8IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.file.import" commandName="Import" description="Import" category="_vhlMg4RNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vhoP8YRNEeyQIt7F6oizqQ" elementId="importWizardId" name="Import Wizard"/>
+  </commands>
+  <commands xmi:id="_vho24IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.perspectives.showPerspective" commandName="Show Perspective" description="Show a particular perspective" category="_vhlMgIRNEeyQIt7F6oizqQ">
+    <parameters xmi:id="_vho24YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.perspectives.showPerspective.perspectiveId" name="Parameter"/>
+    <parameters xmi:id="_vho24oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.perspectives.showPerspective.newWindow" name="In New Window"/>
+  </commands>
+  <commands xmi:id="_vho244RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.nextPerspective" commandName="Next Perspective" description="Switch to the next perspective" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho25IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.linkWithEditor" commandName="Toggle Link with Editor" description="Toggles linking of a view's selection with the active editor's selection" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho25YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.openEditorDropDown" commandName="Quick Switch Editor" description="Open the editor drop down list" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho25oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.closeAllPerspectives" commandName="Close All Perspectives" description="Close all open perspectives" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho254RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.ToggleCoolbarAction" commandName="Toggle Main Toolbar Visibility" description="Toggles the visibility of the window toolbar" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho26IRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.window.switchToEditor" commandName="Switch to Editor" description="Switch to an editor" category="_vhlMhIRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho26YRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.help.dynamicHelp" commandName="Show Contextual Help" description="Open the contextual help" category="_vhlMhoRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_vho26oRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.navigate.nextSubTab" commandName="Next Sub-Tab" description="Switch to the next sub-tab" category="_vhlMgYRNEeyQIt7F6oizqQ"/>
+  <commands xmi:id="_g10FYD_LEeS0lKPtDtc_Vw" elementId="de.persosim.driver.connector.ui.command.useBasicReaderCommand" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" commandName="Use basic reader"/>
+  <commands xmi:id="_cO4TEEe5EeS8Sb-zNDOJXw" elementId="de.persosim.driver.connector.ui.command.useStandardReaderCommand" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" commandName="Use standard reader"/>
+  <commands xmi:id="_3McVIOZWEee50pt6teHFRg" elementId="de.persosim.driver.connector.ui.command.useVirtualDriverCommand" contributorURI="platform:/plugin/de.persosim.driver.connector.ui" commandName="Use virtual driver"/>
+  <commands xmi:id="_10f3IEZgEeSQKqd06nTv0g" elementId="de.persosim.simulator.ui.command.selectPersoFromTemplateCommand" contributorURI="platform:/plugin/de.persosim.simulator.ui" commandName="Select Perso From Template">
+    <parameters xmi:id="_5ezJMEZhEeSQKqd06nTv0g" elementId="de.persosim.simulator.ui.commandparameter.persoSet" contributorURI="platform:/plugin/de.persosim.simulator.ui" name="PersoSet" typeId="" optional="false"/>
+  </commands>
+  <commands xmi:id="_7jTUYFUDEeSxD7VZ_Y6-PA" elementId="de.persosim.simulator.ui.command.SelectPersoFromFileCommand" contributorURI="platform:/plugin/de.persosim.simulator.ui" commandName="Select Perso From File"/>
+  <commands xmi:id="_Kls4QB1fEeiVtbTXi_49Ng" elementId="de.persosim.simulator.ui.command.removeCard" contributorURI="platform:/plugin/de.persosim.simulator.ui" commandName="Remove Card"/>
+  <commands xmi:id="_af6NUOZYEee50pt6teHFRg" elementId="de.persosim.remoteifd.ui.command.useRemoteIfdCommand" contributorURI="platform:/plugin/de.persosim.remoteifd.ui" commandName="Use RemoteIFD"/>
+  <commands xmi:id="_fNn5oOZYEee50pt6teHFRg" elementId="de.persosim.remoteifd.ui.command.ConfigureRemoteIfdCommand" contributorURI="platform:/plugin/de.persosim.remoteifd.ui" commandName="Configure RemoteIFD"/>
+  <addons xmi:id="_vgMshIRNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_vgMshYRNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_vgMshoRNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_vgMsh4RNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_vgMsiIRNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_vgMsiYRNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_vgMsioRNEeyQIt7F6oizqQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/de.persosim.rcp" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_vgV2YIRNEeyQIt7F6oizqQ" elementId="CleanupAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.cleanupaddon.CleanupAddon"/>
+  <addons xmi:id="_vgWdcIRNEeyQIt7F6oizqQ" elementId="MinMaxAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
+  <addons xmi:id="_vgXEgIRNEeyQIt7F6oizqQ" elementId="DnDAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
+  <addons xmi:id="_vgXEgYRNEeyQIt7F6oizqQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
+  <categories xmi:id="_vhklcIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
+  <categories xmi:id="_vhlMgIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.perspectives" name="Perspectives" description="Commands for opening perspectives"/>
+  <categories xmi:id="_vhlMgYRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.navigate" name="Navigate"/>
+  <categories xmi:id="_vhlMgoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>
+  <categories xmi:id="_vhlMg4RNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.file" name="File"/>
+  <categories xmi:id="_vhlMhIRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.window" name="Window"/>
+  <categories xmi:id="_vhlMhYRNEeyQIt7F6oizqQ" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
+  <categories xmi:id="_vhlMhoRNEeyQIt7F6oizqQ" elementId="org.eclipse.ui.category.help" name="Help"/>
+</application:Application>

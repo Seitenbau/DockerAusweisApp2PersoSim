@@ -7,7 +7,8 @@ RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/ap
     apk --no-cache upgrade -a && \
     apk --no-cache add pcsc-lite-libs tini eudev-libs \
                        libxkbcommon libxcb xcb-util xcb-util-cursor xcb-util-renderutil xcb-util-xrm xcb-util-wm xcb-util-image xcb-util-keysyms \
-                       mesa mesa-gl mesa-dri-gallium mesa-dri-classic libx11 xkeyboard-config fontconfig freetype ttf-dejavu libxkbcommon-x11 sudo && \
+                       mesa mesa-gl mesa-dri-gallium mesa-dri-classic libx11 xkeyboard-config fontconfig freetype ttf-dejavu libxkbcommon-x11 sudo \
+                       gtk+3.0 openjdk11-jre libc6-compat bash xvfb && \
     echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/wheel && \
     adduser ausweisapp -G wheel -s /bin/sh -D
 
@@ -51,6 +52,28 @@ RUN sudo apk --no-cache --virtual deps add patch cmake make ninja g++ pkgconf pc
     \
     sudo apk --no-cache del deps
 
+COPY files/entrypoint.sh /usr/local/bin/
+
+RUN mkdir -p /home/ausweisapp/persosim && \ 
+    cd /home/ausweisapp && \
+    wget -q 'https://persosim.secunet.com/fileadmin/user_upload/PersoSim0.17.2_linux64.zip' && \
+    wget 'https://github.com/Seitenbau/de.persosim.driver.connector/releases/download/0.17.2.20210224-auto-login-state-persistence/de.persosim.driver.connector.ui_0.17.2.20210224.jar' && \
+    unzip -q PersoSim0.17.2_linux64.zip -d /home/ausweisapp/persosim && \
+    rm PersoSim0.17.2_linux64.zip && \
+    mv /home/ausweisapp/de.persosim.driver.connector.ui_0.17.2.20210224.jar /home/ausweisapp/persosim/plugins/ && \
+    sudo chmod 644 /home/ausweisapp/persosim/plugins/de.persosim.driver.connector.ui_0.17.2.20210224.jar && \
+    sudo chmod 755 /usr/local/bin/entrypoint.sh && \
+    mkdir -p /home/ausweisapp/.config/persosim
+
+# Rebuild from here after you saved the config
+COPY files/config /home/ausweisapp/.config/
+RUN sudo chown -R ausweisapp:wheel /home/ausweisapp/.config/
+
+ENV XVFB_ENABLED=true    \
+    LANG=DE              \
+    DISPLAY=:100
+
+EXPOSE 24730
 
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD /usr/local/bin/AusweisApp2
+CMD /usr/local/bin/entrypoint.sh
