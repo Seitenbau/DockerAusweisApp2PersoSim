@@ -1,0 +1,25 @@
+From bd58241cd1991ea3fba4fca7cf7dcc9834dbd527 Mon Sep 17 00:00:00 2001
+From: Mario Melcher <mario.melcher@seitenbau.com>
+Date: Tue, 4 Jan 2022 13:28:44 +0100
+Subject: [PATCH] click confirmButton automatically after 4 s
+
+---
+ .../qml/Governikus/IdentifyView/+desktop/EditRights.qml      | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/resources/qml/Governikus/IdentifyView/+desktop/EditRights.qml b/resources/qml/Governikus/IdentifyView/+desktop/EditRights.qml
+index 9c37bff0..f51195fd 100644
+--- a/resources/qml/Governikus/IdentifyView/+desktop/EditRights.qml
++++ b/resources/qml/Governikus/IdentifyView/+desktop/EditRights.qml
+@@ -116,6 +116,11 @@ SectionPage {
+ 				Item {
+ 					height: Math.max(detailsButton.height, confirmButton.height)
+ 
++					Timer {
++						interval: 4000; running: true; repeat: false
++						onTriggered: confirmButton.clicked()
++					}
++
+ 					anchors {
+ 						left: parent.left
+ 						right: parent.right
