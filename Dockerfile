@@ -5,7 +5,7 @@ ENV VERSION=1.22.3 QT_PLUGIN_PATH=/home/ausweisapp/libs/plugins
 
 RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
     apk --no-cache upgrade -a && \
-    apk --no-cache add ccid pcsc-lite pcsc-lite-libs tini pcsc-cyberjack acsccid eudev-libs \
+    apk --no-cache add pcsc-lite-libs tini eudev-libs \
                        libxkbcommon libxcb xcb-util xcb-util-cursor xcb-util-renderutil xcb-util-xrm xcb-util-wm xcb-util-image xcb-util-keysyms \
                        mesa mesa-gl mesa-dri-gallium mesa-dri-classic libx11 xkeyboard-config fontconfig freetype ttf-dejavu libxkbcommon-x11 sudo && \
     echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/wheel && \
@@ -48,4 +48,4 @@ RUN sudo apk --no-cache --virtual deps add patch cmake make ninja g++ pkgconf pc
 
 
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD /usr/sbin/pcscd && /usr/local/bin/AusweisApp2
+CMD /usr/local/bin/AusweisApp2
