@@ -13,6 +13,9 @@ RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/ap
 
 USER ausweisapp
 
+# patch from https://github.com/nitschSB/AusweisApp2/commit/bd58241cd1991ea3fba4fca7cf7dcc9834dbd527.patch
+COPY files/ausweisApp2-automation.patch /home/ausweisapp
+
 # Install development stuff
 # Get AusweisApp2
 # Build Libraries
@@ -27,6 +30,8 @@ RUN sudo apk --no-cache --virtual deps add patch cmake make ninja g++ pkgconf pc
     cd ~ && mkdir build && cd build && \
     wget https://github.com/Governikus/AusweisApp2/releases/download/${VERSION}/AusweisApp2-${VERSION}.tar.gz && \
     cmake -E tar xf AusweisApp2-${VERSION}.tar.gz && \
+    cd AusweisApp2-${VERSION} && \
+    patch -p1 -i ../../ausweisApp2-automation.patch && \
     \
     cd ~/build && mkdir libs && cd libs && \
     cmake ../AusweisApp2-${VERSION}/libs/ -DCMAKE_BUILD_TYPE=Release -DDESTINATION_DIR=/home/ausweisapp/libs && \
