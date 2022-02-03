@@ -8,7 +8,7 @@ RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/ap
     apk --no-cache add pcsc-lite-libs tini eudev-libs \
                        libxkbcommon libxcb xcb-util xcb-util-cursor xcb-util-renderutil xcb-util-xrm xcb-util-wm xcb-util-image xcb-util-keysyms \
                        mesa mesa-gl mesa-dri-gallium mesa-dri-classic libx11 xkeyboard-config fontconfig freetype ttf-dejavu libxkbcommon-x11 sudo \
-                       gtk+3.0 openjdk11-jre libc6-compat bash xvfb && \
+                       gtk+3.0 openjdk11-jre libc6-compat bash xvfb caddy && \
     echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/wheel && \
     adduser ausweisapp -G wheel -s /bin/sh -D
 
@@ -70,6 +70,7 @@ COPY files/config /home/ausweisapp/.config/
 RUN sudo chown -R ausweisapp:wheel /home/ausweisapp/.config/
 
 ENV XVFB_ENABLED=true    \
+    REVERSEPROXY_ENABLED=true    \
     LANG=DE              \
     DISPLAY=:100
 

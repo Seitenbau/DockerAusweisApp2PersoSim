@@ -12,7 +12,7 @@ docker build -t ausweisapp2persosim:2.0 .
 ## Ausführen
 
 ```
-docker run -d --restart unless-stopped --name ausweisapp2persosim --net=host ausweisapp2persosim:2.0
+docker run -d --restart unless-stopped --name ausweisapp2persosim -p 24727:24730 ausweisapp2persosim:2.0
 ```
 
 Jetzt kann ein Ausweisvorgang gestart werden. Nach ca. 10s ist der Testausweis ohne jegliches zutun durch eine Person ausgelesen.
@@ -34,12 +34,20 @@ Dies kann man machen, indem man wie folgt vorgeht
 1. AusweisApp2 und PersoSim starten
     ```
     docker run -d --name x11-bridge -e MODE="tcp" -e XPRA_HTML="yes" -e DISPLAY=:14 -e XPRA_PASSWORD=111 -p 10000:10000  jare/x11-bridge
-    docker run -d --rm --name temp-container --volumes-from x11-bridge -v $(pwd)/files/config:/home/ausweisapp/.config -e DISPLAY=:14 -e LANG=DE --net host ausweisapp2persosim:withoutconfig
+    docker run -d --rm --name temp-container --volumes-from x11-bridge -v $(pwd)/files/config:/home/ausweisapp/.config -e DISPLAY=:14 -e LANG=DE -p 24727:24730 ausweisapp2persosim:withoutconfig
     ```
 2. Die GUIs im Browser unter http://localhost:10000/index.html?encoding=rgb32&password=111# öffnen.
 3. AusweisApp2 und PersoSim über die GUIs konfigurieren.
 4. Optional: Einen Ausweisvorgang zum Testen durchführen.
 5. Die relevanten Dateien von `/home/ausweisapp/.config` des Containers werden in den [`files/config/`](./files/config/)-Ordner dieses Repositorys geschrieben.
+
+### Netzwerktechnische Verknüpfung des Containers mit dem Hostsystem, das die AusweisApp2 nutzen will
+
+Die AusweisApp2 lässt nur Verbindungen von localhost zu. Daher reicht es nicht den Port 24727 des Containers zu exponieren. Die Option `--net=host` funktioniert nur unter Linux oder in der WSL2. Docker Desktop für Mac und Windows unterstützt dies (meist) nicht. Aus dem Grund wird im Container ein `caddy reverse-proxy` gestartet, welcher auf Port 24730 hört und der AusweisApp2 vorgaukelt, dass Anfragen von localhost (innerhalb des Containers) kämen.
+
+Dies hat zur Folge, dass beim Start des Containers der exponierte Port 24730 des Containers auf den Port 24727 des Hostsystems gemappt werden muss (`-p 24727:24730`).
+
+Beim Betreib innerhalb eines Pods mit Containern für e2e-Tests, ist der `caddy reverse-proxy` nicht zwingend nötig.
 
 # LICENSE
 
