@@ -76,6 +76,5 @@ ENV XVFB_ENABLED=true    \
 
 EXPOSE 24730
 
-VOLUME ["/home/ausweisapp/.config"]
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD /usr/local/bin/entrypoint.sh
