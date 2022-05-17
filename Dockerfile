@@ -1,6 +1,6 @@
 FROM alpine:3.15
 
-ENV VERSION=1.22.3 QT_PLUGIN_PATH=/home/ausweisapp/libs/plugins
+ENV VERSION=1.22.5 QT_PLUGIN_PATH=/home/ausweisapp/libs/plugins
 
 
 RUN echo '@testing http://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories && \
@@ -28,7 +28,7 @@ RUN sudo apk --no-cache --virtual deps add patch cmake make ninja g++ pkgconf pc
                         xcb-util-wm-dev xcb-util-image-dev xcb-util-keysyms-dev \
                         xcb-util-renderutil-dev libxcb-dev && \
     \
-    cd ~ && mkdir build && cd build && \
+    cd ~ && mkdir .config && mkdir build && cd build && \
     wget https://github.com/Governikus/AusweisApp2/releases/download/${VERSION}/AusweisApp2-${VERSION}.tar.gz && \
     cmake -E tar xf AusweisApp2-${VERSION}.tar.gz && \
     cd AusweisApp2-${VERSION} && \
@@ -76,5 +76,6 @@ ENV XVFB_ENABLED=true    \
 
 EXPOSE 24730
 
+VOLUME ["/home/ausweisapp/.config"]
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD /usr/local/bin/entrypoint.sh
