@@ -7,12 +7,12 @@ Ziel dieses Projektes ist es, ohne Interaktion durch eine Person mit dem Ausweis
 ## Docker Container bauen
 
 ```
-docker build -t ausweisapp2persosim:2.1 .
+docker build -t ausweisapp2persosim:2.2 .
 ```
 ## Ausführen
 
 ```
-docker run -d --restart unless-stopped --name ausweisapp2persosim -p 24727:24730 ausweisapp2persosim:2.1
+docker run -d --restart unless-stopped --name ausweisapp2persosim -p 24727:24730 ausweisapp2persosim:2.2
 ```
 
 Jetzt kann ein Ausweisvorgang gestart werden. Nach ca. 10s ist der Testausweis ohne jegliches zutun durch eine Person ausgelesen.
