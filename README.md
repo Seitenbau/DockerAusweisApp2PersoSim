@@ -1,5 +1,11 @@
 [![LICENSE](https://img.shields.io/badge/license-EUPL_v1.2-blue.svg)](https://raw.githubusercontent.com/misery/DockerAusweisApp2/master/LICENSE.txt)
 
+# Archiviert
+
+Dieses Projekt wird nicht weiterentwicklet, da die Funktionen inzwischen in V1.24 der AusweisApp2 aufgenommen wurden (siehe [Changelog 1.24.0](https://github.com/Governikus/AusweisApp2/releases/tag/1.24.0)).
+
+Es steht ein offizielles Dockerimage [governikus/ausweisapp2](https://hub.docker.com/r/governikus/ausweisapp2) (Verwendung siehe [Doku](https://www.ausweisapp.bund.de/sdk/container.html)) zur Verfügung, das dieses Projket überflüssig macht.
+
 # Vollautomatisches Auslesen von Testausweisen
 
 Ziel dieses Projektes ist es, ohne Interaktion durch eine Person mit dem Ausweissimulator **PersoSim** oder dem eID-Client **AusweisApp2** auslesen zu können, um in Web-Anwendungen diese Funktion e2e-testbar zu machen.
